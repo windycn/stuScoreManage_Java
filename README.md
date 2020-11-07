@@ -7,15 +7,17 @@ Completely using Java to write the student achievement management system, does n
 
 目前系统中使用了表情符号:smirk:，所以文件保存格式为UTF-8，下载后打开乱码可以注意一下编码:computer:问题。
 
+:alarm_clock:如果图片加载不出来，那是因为国内图片加载的连接被Ban了（外网可访问），可以直接查看本目录“imageCache”文件夹的图片。
+
  :bug:目前系统还有许多BUG有待改进，代码冗余性等等也需要进一步迭代，所以欢迎:clinking_glasses:提交你的代码到此仓库:house:！
 
 :point_right:该系统用例图如下：
 
-![成绩管理系统用例图](.\imageCache\成绩管理系统用例图.png)
+![成绩管理系统用例图](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/成绩管理系统用例图.png?raw=true)
 
 :point_right:该系统的系统架构图如下：
 
-![成绩管理系统架构图](.\imageCache\成绩管理系统架构图.png)
+![成绩管理系统架构图](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/成绩管理系统架构图.png?raw=true)
 
 ---
 
@@ -23,22 +25,23 @@ Completely using Java to write the student achievement management system, does n
 
 1、目录下data文件:floppy_disk:仅供个人测试，可以删除，系统会重新进入初始化！
 
-![1-初始化系统，添加管理员](.\imageCache\1-初始化系统，添加管理员.png)
+![1-初始化系统，添加管理员](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/1-初始化系统，添加管理员.png?raw=true)
 
 2、目前系统的测试用户列表如下：
 
-账号                  密码            账户类型
-10000               10000         admin
-1828124026    123456       student
-1828124037    789456       student
-121115             123456       teacher
-19216811        123456       admin
+| 测试账号   | 密码   | 账户类型 |
+| ---------- | ------ | -------- |
+| 10000      | 10000  | admin    |
+| 19216811   | 123456 | admin    |
+| 1828124026 | 123456 | student  |
+| 1828124037 | 789456 | student  |
+| 121115     | 123456 | teacher  |
 
 ---
 
 :artificial_satellite:部分系统运行截图如下：
 
-![3-管理员登录](.\imageCache\3-管理员登录.png)![2-登录三次错误后退出系统](.\imageCache\2-登录三次错误后退出系统.png)
+![3-管理员登录](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/3-管理员登录.png?raw=true)![2-登录三次错误后退出系统](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/2-登录三次错误后退出系统.png?raw=true)
 
 ---
 
@@ -74,7 +77,7 @@ Completely using Java to write the student achievement management system, does n
 
 工欲善其事，必先利其器。我们需要对整个项目具有一个较好的项目目录，而不是把所有的Java源文件杂乱堆放在一个包中。
 
-![项目目录](.\imageCache\项目目录.png)
+![项目目录](https://github.com/windycn/stuScoreManage_Java/blob/main/imageCache/项目目录.png?raw=true)
 
 如图所示，我们将整个系统划分为*course*、*score*、*student*、*user*和*stuScoreManage*包，分别将不同的对象定义类以及对应的操控界面类放入其中，这样子对项目我们能够很快速地进行代码搜寻。我们采用了自顶向下的系统架构设计，但是我们实际编写代码要采用自底向上进行一步步深入。
 
